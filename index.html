@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Mundo Lego</title>
   </head>
@@ -12,9 +13,12 @@
         <img src="img/logo.png" alt="Logo Mundo Lego" />
       </a>
       <div class="navegation-menu">
-        <img src="img/menu.png" alt="Ícone de Menu" />
+        <label for="menu">
+          <img src="img/menu.png" alt="Ícone de Menu" />
+        </label>
+        <input type="checkbox" id="menu" hidden />
         <nav>
-          <ul>
+          <ul class="list-link">
             <li>
               <a
                 href="index.html"

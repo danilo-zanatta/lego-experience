@@ -6,9 +6,9 @@
 }
 
 :root {
-  --backgroud-primary-color: #ffffff;
-  --backgroud-secondary-color: #f6ec35;
-  --backgroud-tertiary-color: #d11013;
+  --background-primary-color: #ffffff;
+  --background-secondary-color: #f6ec35;
+  --background-tertiary-color: #d11013;
 
   --primary-color: #d11013;
   --secondary-color: #f6ec35;
@@ -37,4 +37,8 @@ select {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
