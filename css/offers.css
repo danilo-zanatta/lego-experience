@@ -1,3 +1,9 @@
+.offers-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
 .cards {
   color: var(--quaternary-color);
   background-color: var(--background-quaternary-color);
@@ -30,4 +36,41 @@
   font-size: 32px;
   margin-top: 24px;
   display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .offers-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cards {
+    width: 450px;
+    height: 308px;
+  }
+
+  .cards header h3 {
+    font-size: 48px;
+  }
+
+  .cards header span {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cards {
+    width: 588px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .offers-cards {
+    width: 1250px;
+    margin: 0 auto;
+  }
 }
