@@ -10,11 +10,12 @@
   --background-secondary-color: #f6ec35;
   --background-tertiary-color: #d11013;
   --background-quaternary-color: #14b8b8;
+  --background-quinary-color: #d3d3d3;
 
   --primary-color: #d11013;
   --secondary-color: #f6ec35;
   --tertiary-color: #000000;
-  --quaternary-color: #ffffff;
+  --quaternary-color: #f0f0f0;
 
   --text-primary-color: #000000;
   --text-secondary-color: #6c757d;
@@ -51,6 +52,10 @@ body {
   font-weight: var(--title-weight);
   margin: 0;
   text-align: center;
+}
+
+.section-title {
+  margin-top: 64px;
 }
 
 .section-title hr {

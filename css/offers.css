@@ -44,13 +44,24 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+
+  .cards {
+    width: 340px;
+    flex: 0 0 340px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .offers-cards {
+    max-width: 980px;
+  }
+
   .cards {
     width: 450px;
-    height: 308px;
+    flex: 0 0 450px;
   }
 
   .cards header h3 {
@@ -63,8 +74,13 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .offers-cards {
+    max-width: 1240px;
+  }
+
   .cards {
     width: 588px;
+    flex: 0 0 588px;
   }
 }
 
