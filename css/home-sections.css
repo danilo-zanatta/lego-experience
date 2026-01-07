@@ -1,0 +1,358 @@
+/* New Arrivals Section */
+.new-arrivals {
+  padding: 0 18px;
+  background-color: var(--background-primary-color);
+}
+
+.arrivals-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.arrival-featured {
+  background: linear-gradient(
+    135deg,
+    var(--background-secondary-color) 0%,
+    var(--background-quaternary-color) 100%
+  );
+  padding: 48px 32px;
+  border-radius: 16px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.arrival-badge {
+  display: inline-block;
+  background-color: var(--background-tertiary-color);
+  color: var(--text-tertiary-color);
+  padding: 8px 24px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: var(--title-weight);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.arrival-featured h3 {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  margin-bottom: 8px;
+  color: var(--text-primary-color);
+}
+
+.arrival-featured h4 {
+  font-size: 32px;
+  font-weight: var(--title-weight);
+  margin-bottom: 16px;
+  color: var(--primary-color);
+}
+
+.arrival-featured p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  color: var(--text-primary-color);
+}
+
+.arrival-price {
+  font-size: 36px;
+  font-weight: var(--title-weight);
+  color: var(--primary-color);
+  margin-bottom: 24px;
+}
+
+.arrivals-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.arrival-small-card {
+  background-color: var(--quaternary-color);
+  padding: 24px 16px;
+  border-radius: 12px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.arrival-small-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.arrival-small-card .arrival-badge {
+  font-size: 10px;
+  padding: 4px 12px;
+  margin-bottom: 12px;
+}
+
+.arrival-small-category {
+  font-size: 12px;
+  color: var(--text-secondary-color);
+  margin-bottom: 8px;
+  font-weight: var(--text-weight);
+}
+
+.arrival-small-card h4 {
+  font-size: 16px;
+  font-weight: var(--title-weight);
+  margin-bottom: 12px;
+  color: var(--text-primary-color);
+  min-height: 38px;
+}
+
+.arrival-small-price {
+  font-size: 20px;
+  font-weight: var(--title-weight);
+  color: var(--primary-color);
+  margin: 0;
+}
+
+/* Special Offers Section */
+.special-offers {
+  padding: 0 18px;
+  background-color: var(--quaternary-color);
+}
+
+.special-offers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.special-offer-banner {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--background-tertiary-color) 100%
+  );
+  border-radius: 16px;
+  padding: 48px 32px;
+  text-align: center;
+  color: var(--text-tertiary-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.special-offer-banner::before {
+  content: "🎁";
+  position: absolute;
+  font-size: 200px;
+  opacity: 0.1;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.offer-content {
+  position: relative;
+  z-index: 1;
+}
+
+.offer-discount {
+  display: inline-block;
+  background-color: var(--background-secondary-color);
+  color: var(--text-primary-color);
+  padding: 12px 32px;
+  border-radius: 32px;
+  font-size: 24px;
+  font-weight: var(--title-weight);
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.special-offer-banner h3 {
+  font-size: 32px;
+  font-weight: var(--title-weight);
+  margin-bottom: 16px;
+}
+
+.special-offer-banner p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.special-offer-banner .button {
+  background-color: var(--background-secondary-color);
+  color: var(--text-primary-color);
+}
+
+.special-offer-banner .button:hover {
+  background-color: var(--background-primary-color);
+  color: var(--primary-color);
+}
+
+.offer-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.offer-card {
+  background-color: var(--background-primary-color);
+  padding: 32px 24px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  border: 2px solid var(--background-quinary-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-color);
+}
+
+.discount-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: var(--background-secondary-color);
+  color: var(--text-primary-color);
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: var(--title-weight);
+}
+
+.offer-card h4 {
+  font-size: 18px;
+  font-weight: var(--title-weight);
+  margin-bottom: 8px;
+  color: var(--text-primary-color);
+}
+
+.offer-card p {
+  font-size: 16px;
+  color: var(--text-secondary-color);
+  margin-bottom: 24px;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.old-price {
+  font-size: 18px;
+  color: var(--text-secondary-color);
+  text-decoration: line-through;
+}
+
+.new-price {
+  font-size: 28px;
+  font-weight: var(--title-weight);
+  color: var(--primary-color);
+}
+
+/* Responsive Tablet */
+@media screen and (min-width: 768px) {
+  .new-arrivals {
+    padding: 0 120px;
+  }
+
+  .arrivals-container {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .arrival-featured {
+    flex: 1;
+    padding: 64px 40px;
+  }
+
+  .arrivals-grid {
+    flex: 1;
+    gap: 24px;
+  }
+
+  .arrival-small-card h4 {
+    font-size: 18px;
+  }
+
+  .special-offers {
+    padding: 0 120px;
+  }
+
+  .offer-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Responsive Desktop */
+@media screen and (min-width: 1024px) {
+  .new-arrivals {
+    padding: 0 160px;
+  }
+
+  .arrival-featured h3 {
+    font-size: 32px;
+  }
+
+  .arrival-featured h4 {
+    font-size: 40px;
+  }
+
+  .arrival-featured p {
+    font-size: 18px;
+  }
+
+  .arrival-price {
+    font-size: 48px;
+  }
+
+  .arrival-small-card {
+    padding: 32px 20px;
+  }
+
+  .arrival-small-card h4 {
+    font-size: 20px;
+    min-height: 48px;
+  }
+
+  .arrival-small-price {
+    font-size: 24px;
+  }
+
+  .special-offers {
+    padding: 0 160px;
+  }
+
+  .offer-discount {
+    font-size: 28px;
+  }
+
+  .special-offer-banner h3 {
+    font-size: 40px;
+  }
+
+  .special-offer-banner p {
+    font-size: 18px;
+  }
+
+  .offer-card {
+    padding: 40px 32px;
+  }
+
+  .offer-card h4 {
+    font-size: 20px;
+  }
+
+  .new-price {
+    font-size: 32px;
+  }
+}
