@@ -1,0 +1,343 @@
+/* Estilos para páginas internas */
+
+.page-hero {
+  background-color: var(--background-tertiary-color);
+  color: var(--text-tertiary-color);
+  padding: 64px 18px;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: 48px;
+  font-weight: var(--title-weight);
+  margin-bottom: 16px;
+}
+
+.page-hero p {
+  font-size: 18px;
+  font-weight: var(--text-weight);
+  margin: 0;
+}
+
+.page-content {
+  padding: 64px 18px;
+}
+
+/* Blog Styles */
+.blog-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-card {
+  background-color: var(--quaternary-color);
+  border-left: 4px solid var(--primary-color);
+  padding: 32px 24px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card h3 {
+  font-size: 24px;
+  font-weight: var(--title-weight);
+  margin-bottom: 8px;
+  color: var(--text-primary-color);
+}
+
+.blog-date {
+  font-size: 14px;
+  color: var(--text-secondary-color);
+  margin-bottom: 16px;
+}
+
+.blog-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-primary-color);
+  margin-bottom: 16px;
+}
+
+.blog-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: var(--title-weight);
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.blog-link:hover {
+  color: var(--background-tertiary-color);
+}
+
+/* Collection Cards */
+.collection-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.collection-card {
+  background-color: var(--quaternary-color);
+  padding: 32px 24px;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collection-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.collection-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.collection-card h3 {
+  font-size: 24px;
+  font-weight: var(--title-weight);
+  margin-bottom: 16px;
+  color: var(--text-primary-color);
+}
+
+.collection-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-secondary-color);
+  margin-bottom: 24px;
+}
+
+/* Themes Grid */
+.themes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.theme-card {
+  background: linear-gradient(
+    135deg,
+    var(--background-secondary-color) 0%,
+    var(--background-quaternary-color) 100%
+  );
+  padding: 32px 24px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 0;
+}
+
+.theme-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-number {
+  font-size: 48px;
+  font-weight: var(--title-weight);
+  color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+}
+
+.theme-card h3 {
+  font-size: 24px;
+  font-weight: var(--title-weight);
+  margin-bottom: 16px;
+  color: var(--text-primary-color);
+}
+
+.theme-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-primary-color);
+}
+
+/* Contact Form */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.contact-form-section,
+.contact-info-section {
+  background-color: var(--quaternary-color);
+  padding: 32px 24px;
+  border-radius: 16px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: var(--title-weight);
+  font-size: 16px;
+  color: var(--text-primary-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 16px;
+  border: 2px solid var(--quaternary-color);
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background-color: var(--background-primary-color);
+  color: var(--text-primary-color);
+}
+
+/* Contact Info */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info-item h4 {
+  font-size: 18px;
+  font-weight: var(--title-weight);
+  margin-bottom: 8px;
+  color: var(--text-primary-color);
+}
+
+.info-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-secondary-color);
+  margin: 0;
+}
+
+.info-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+  color: var(--background-tertiary-color);
+}
+
+/* Responsive Tablet */
+@media screen and (min-width: 768px) {
+  .page-hero {
+    padding: 80px 120px;
+  }
+
+  .page-hero h1 {
+    font-size: 56px;
+  }
+
+  .page-hero p {
+    font-size: 20px;
+  }
+
+  .page-content {
+    padding: 80px 120px;
+  }
+
+  .collection-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .themes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .contact-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+  }
+
+  .contact-form-section .section-title {
+    text-align: left;
+  }
+
+  .contact-info-section .section-title {
+    text-align: left;
+  }
+}
+
+/* Responsive Desktop */
+@media screen and (min-width: 1024px) {
+  .page-hero {
+    padding: 100px 160px;
+  }
+
+  .page-hero h1 {
+    font-size: 64px;
+  }
+
+  .page-hero p {
+    font-size: 22px;
+  }
+
+  .page-content {
+    padding: 100px 160px;
+  }
+
+  .collection-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .themes-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .blog-posts {
+    max-width: 900px;
+  }
+
+  .contact-container {
+    gap: 80px;
+  }
+}

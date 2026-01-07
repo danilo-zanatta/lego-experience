@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contato - Mundo Lego</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html" title="Voltar para a página inicial">
+        <img class="img-mobile" src="img/logo.png" alt="Logo Mundo Lego" />
+        <img
+          class="img-desktop"
+          src="img/logo-desktop.png"
+          alt="Logo Mundo Lego"
+        />
+      </a>
+      <div class="navegation-menu">
+        <label for="menu">
+          <img src="img/menu.png" alt="Ícone de Menu" />
+        </label>
+        <input type="checkbox" id="menu" hidden />
+        <nav>
+          <ul class="list-link">
+            <li>
+              <a href="blog.html" target="_self" title="Acessar Blog">Blog</a>
+            </li>
+            <li>
+              <a href="colecoes.html" target="_self" title="Acessar Coleções"
+                >Coleções</a
+              >
+            </li>
+            <li>
+              <a href="temas.html" target="_self" title="Acessar Temas"
+                >Temas</a
+              >
+            </li>
+            <li>
+              <a href="contato.html" target="_self" title="Acessar Contato"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="page-hero">
+      <h1>Contato</h1>
+      <p>Fale conosco, adoramos ouvir de você!</p>
+    </section>
+    <section class="page-content">
+      <div class="contact-container">
+        <div class="contact-form-section">
+          <div class="section-title">
+            <h2>Envie uma mensagem</h2>
+            <hr />
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="nome">Nome Completo *</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                placeholder="Digite seu nome"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="seu.email@exemplo.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="assunto">Assunto *</label>
+              <select id="assunto" name="assunto" required>
+                <option value="">Selecione um assunto</option>
+                <option value="duvida">Dúvida sobre produtos</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="parceria">Parceria</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem *</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                required
+                placeholder="Digite sua mensagem aqui..."
+                rows="6"
+              ></textarea>
+            </div>
+            <button type="submit" class="button">Enviar Mensagem</button>
+          </form>
+        </div>
+        <div class="contact-info-section">
+          <div class="section-title">
+            <h2>Informações de Contato</h2>
+            <hr />
+          </div>
+          <div class="contact-info">
+            <div class="info-item">
+              <h4>📧 Email</h4>
+              <p>
+                <a href="mailto:contato@mundolego.com">contato@mundolego.com</a>
+              </p>
+            </div>
+            <div class="info-item">
+              <h4>📞 Telefone</h4>
+              <p><a href="tel:+5511999999999">+55 (11) 99999-9999</a></p>
+            </div>
+            <div class="info-item">
+              <h4>📍 Localização</h4>
+              <p>São Paulo, SP<br />Brasil</p>
+            </div>
+            <div class="info-item">
+              <h4>🕐 Horário de Atendimento</h4>
+              <p>
+                Segunda a Sexta: 9h às 18h<br />Sábado: 9h às 13h<br />Domingo:
+                Fechado
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Sobre Nós</h3>
+          <p>
+            Somos apaixonados por criatividade e construção. LEGO é mais que
+            brinquedos, é arte em forma de peças.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Links Úteis</h3>
+          <ul>
+            <li><a href="blog.html" target="_self">Blog</a></li>
+            <li><a href="colecoes.html" target="_self">Coleções</a></li>
+            <li><a href="temas.html" target="_self">Temas</a></li>
+            <li><a href="contato.html" target="_self">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Redes Sociais</h3>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/LEGO"
+                target="_blank"
+                title="Visite nosso Facebook"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/lego/"
+                target="_blank"
+                title="Visite nosso Instagram"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/LEGO"
+                target="_blank"
+                title="Visite nosso Twitter"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/LEGO"
+                target="_blank"
+                title="Visite nosso YouTube"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mundo LEGO. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>
